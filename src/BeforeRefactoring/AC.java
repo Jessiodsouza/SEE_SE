@@ -2,7 +2,7 @@ package BeforeRefactoring;
 
 public class AC {
 	int on=1;
-	int temp=30;
+	int AC_temp=30;
 	String name="AC";
 	
 	public void turnOn(){
@@ -14,12 +14,12 @@ public class AC {
 		System.out.println("AC is Turned On");
 	}
 	public void tempIncrease(){
-		temp++;
-		System.out.println("Temperature: "+temp);
+		AC_temp++;
+		System.out.println("Temperature: "+AC_temp);
 	}
 	public void tempDecrease(){
-		temp--;
-		System.out.println("Temperature: "+temp);
+		AC_temp--;
+		System.out.println("Temperature: "+AC_temp);
 	}
 	public String getName() {
 		return name;

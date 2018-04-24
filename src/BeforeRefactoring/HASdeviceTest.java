@@ -19,5 +19,4 @@ public class HASdeviceTest {
 		has2.addTV();
 		has2.displayDeviceList();
 	}
-
 }

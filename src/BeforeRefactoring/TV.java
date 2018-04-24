@@ -4,7 +4,7 @@ public class TV {
 
 	int on=1;
 	int channel=0;
-	int volume=0;
+	int sound=0;
 	String name="TV";
 	
 	public void turnOn(){
@@ -17,18 +17,26 @@ public class TV {
 	}
 	public void channelNext(){
 		channel++;
-		System.out.println("Channel: "+channel);
+		channeldisplay();
 	}
 	public void channelPrevious(){
 		channel--;
+		channeldisplay();
+	}
+	public void channeldisplay(){
 		System.out.println("Channel: "+channel);
 	}
+	
+	
 	public void volumeUp(){
-		volume++;
-		System.out.println("Volume: "+volume);
+		sound++;
+		volumedisplay();
 	}
 	public void volumeDown(){
-		volume--;
-		System.out.println("Volume: "+volume);
+		sound--;
+		volumedisplay();
+	}
+	public void volumedisplay(){
+		System.out.println("Volume: "+sound);
 	}
 }
